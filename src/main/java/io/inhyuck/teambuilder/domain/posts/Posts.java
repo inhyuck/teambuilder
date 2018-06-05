@@ -7,11 +7,12 @@ import lombok.NoArgsConstructor;
 import sun.jvm.hotspot.memory.Generation;
 
 import javax.persistence.*;
+import java.lang.ref.WeakReference;
 
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //스프링부트 2.0부터 기본값 설정 해줘야함
