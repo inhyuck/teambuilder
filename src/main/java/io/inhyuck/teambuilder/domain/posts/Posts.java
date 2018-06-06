@@ -15,7 +15,7 @@ import java.lang.ref.WeakReference;
 public class Posts extends BaseTimeEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //스프링부트 2.0부터 기본값 설정 해줘야함
+    @GeneratedValue
     private Long id;
 
     @Column(length = 500, nullable = false)
