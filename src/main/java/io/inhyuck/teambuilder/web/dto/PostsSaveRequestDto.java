@@ -1,4 +1,4 @@
-package io.inhyuck.teambuilder.web;
+package io.inhyuck.teambuilder.web.dto;
 
 import io.inhyuck.teambuilder.domain.posts.Posts;
 import lombok.Builder;

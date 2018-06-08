@@ -1,7 +1,7 @@
 package io.inhyuck.teambuilder.web;
 
-import io.inhyuck.teambuilder.domain.posts.PostsRepository;
 import io.inhyuck.teambuilder.service.PostsService;
+import io.inhyuck.teambuilder.web.dto.PostsSaveRequestDto;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

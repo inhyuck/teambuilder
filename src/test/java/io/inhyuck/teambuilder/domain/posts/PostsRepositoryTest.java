@@ -1,5 +1,6 @@
 package io.inhyuck.teambuilder.domain.posts;
 
+import io.inhyuck.teambuilder.web.dto.PostsMainResponseDto;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,6 +10,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -43,7 +46,7 @@ public class PostsRepositoryTest {
         List<Posts> postsList = postsRepository.findAll();
 
         //then
-        Posts posts = postsList.get(0);
+        Posts posts = postsList.get(2);
         assertThat(posts.getTitle(), is("테스트 게시글"));
         assertThat(posts.getContent(), is("테스트 본문"));
     }
@@ -65,4 +68,12 @@ public class PostsRepositoryTest {
         assertTrue(posts.getCreatedDate().isAfter(now));
         assertTrue(posts.getModifiedDate().isAfter(now));
     }
+
+//    @Test
+//    public void 게시글목록_불러오기() {
+//        //given
+//        //when
+//        //then
+//
+//    }
 }
