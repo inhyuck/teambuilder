@@ -2,7 +2,7 @@ package io.inhyuck.teambuilder.service;
 
 import io.inhyuck.teambuilder.domain.posts.Posts;
 import io.inhyuck.teambuilder.domain.posts.PostsRepository;
-import io.inhyuck.teambuilder.web.PostsSaveRequestDto;
+import io.inhyuck.teambuilder.web.dto.PostsSaveRequestDto;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -45,4 +45,11 @@ public class PostServiceTest {
         assertThat(posts.getContent()).isEqualTo(dto.getContent());
         assertThat(posts.getTitle()).isEqualTo(dto.getTitle());
     }
+
+//    @Test
+//    public void Dto데이터_목록이_보인다() {
+//        //given
+//        //when
+//        //then
+//    }
 }
