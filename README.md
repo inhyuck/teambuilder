@@ -14,8 +14,8 @@
 
 ## 사용된 도구
 
-- [Spring-boot 1.5](http://www.dropwizard.io/1.0.2/docs/)  - Spring-boot 웹 프레임워크
-- [gradle](https://maven.apache.org/) - 의존성 관리 프로그램
+- [Spring-boot 1.5](https://spring.io/projects/spring-boot)  - Spring-boot 웹 프레임워크
+- [Gradle build Tool](https://gradle.org/) - 의존성 관리 프로그램
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
 ## 저자
@@ -23,8 +23,6 @@
 - [**최인혁**](https://github.com/inhyuck)
 
 ## 라이센스
-
-MIT
 
 ## 감사 인사
 
